@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="icon" href="img/logo.jpg">
+</head>
+<body>
+    <header>
+        <h1>Registration form</h1>
+        <nav>
+            <a href="index.html">Return home</a>
+        </nav>
+    </header>
+    <main>  
+    <form action="https://formspree.io/xayplanq" method="POST">
+            <label for="first-name">First name*:
+                <input type="text" id="fname" name="first-name" required>
+            </label>
+            <br><br>
+            <label for="last-name">Last name*:
+                <input type="text" id="lname" name="last-name" required>
+            </label>
+            <br><br>
+            <label>Client email:
+                <input type="email" name="email" placeholder="Email">
+            </label>
+            <br><br>
+            <label>Gender:</label>
+                <label>
+                    <input type="radio" name="gender" value="male">Male
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="female">Female
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="other">Other
+                </label>
+                <br><br>
+            <input type="submit" value="Submit">
+            <input type="reset">
+        </form>
+    </main>
+</body>
+</html>
