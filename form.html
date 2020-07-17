@@ -10,35 +10,108 @@
     <header>
         <h1>Registration form</h1>
         <nav>
-            <a href="index.html">Return home</a>
+            <a href="index.html">
+                Return home
+                <br>
+                <img src="img/back-button.png" alt="Back button" width="50" height="30">
+            </a>
         </nav>
     </header>
+    <br>
     <main>  
     <form action="https://formspree.io/xayplanq" method="POST">
-            <label for="first-name">First name*:
+            <label for="first-name"><b>First name*:</b>
                 <input type="text" id="fname" name="first-name" required>
             </label>
             <br><br>
-            <label for="last-name">Last name*:
+            <label for="last-name"><b>Last name*:</b>
                 <input type="text" id="lname" name="last-name" required>
             </label>
             <br><br>
-            <label>Client email:
-                <input type="email" name="email" placeholder="Email">
+            <label><b>E-mail:</b>
+                <input type="email" name="email" placeholder="mail@gmail.com">
             </label>
             <br><br>
-            <label>Gender:</label>
-                <label>
-                    <input type="radio" name="gender" value="male">Male
-                </label>
-                <label>
+            <label><b>Phone*:</b>
+                <input type="tel" name="phone" maxlength="15" placeholder="(063)-999-99-99" required>
+            </label>
+            <br><br>
+            <label><b>Gender:</b></label>
+            <br>
+            <ul>
+                <li type="none"><label>
+                    <input type="radio" name="gender" value="male" checked>Male
+                </label></li>
+                <li type="none"><label>
                     <input type="radio" name="gender" value="female">Female
-                </label>
-                <label>
+                </label></li>
+                <li type="none"><label>
                     <input type="radio" name="gender" value="other">Other
-                </label>
-                <br><br>
-            <input type="submit" value="Submit">
+                </label></li>
+            </ul>
+            <br><br>
+            <label><b>Select preffered model:</b></label>
+            <br><br>
+            <table>
+                <tr>
+                    <td>
+                        <label>
+                            <input type="checkbox" name="model" value="defender">
+                                <img src="img/range-rover-defender.jpg" alt="Range Rover Defender" width="150" height="150">
+                                <br>
+                                <i><small>Range Rover Defender</small></i>
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <input type="checkbox" name="model" value="discovery-sport">
+                                <img src="img/range-rover-discovery-sport.jpg" alt="Range Rover Discovery Sport" width="150" height="150">
+                                <br>
+                                <i><small>Range Rover Discovery Sport</small></i>
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <input type="checkbox" name="model" value="discovery">
+                                <img src="img/range-rover-discovery.jpg" alt="Range Rover Discovery" width="150" height="150">
+                                <br>
+                                <i><small>Range Rover Discovery</small></i>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>
+                            <input type="checkbox" name="model" value="evoque">
+                                <img src="img/range-rover-evoque.jpg" alt="Range Rover Evoque" width="150" height="150">
+                                <br>
+                                <i><small>Range Rover Evoque</small></i>
+                        </label>
+                    </td>  
+                    <td>    
+                        <label>
+                            <input type="checkbox" name="model" value="sport">
+                                <img src="img/range-rover-sport.jpg" alt="Range Rover Sport" width="150" height="150">
+                                <br>
+                                <i><small>Range Rover Sport</small></i>
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <input type="checkbox" name="model" value="velar">
+                                <img src="img/range-rover-velar.jpg" alt="Range Rover Velar" width="150" height="150">
+                                <br>
+                                <i><small>Range Rover Velar</small></i>
+                        </label>
+                    </td>
+                </tr>
+            </table>
+            <p><b>Comments</b>
+                <br>
+                <textarea name="comments" cols="40" rows="3">
+                </textarea>
+            </p>
+            <input type="submit" value="Registration">
             <input type="reset">
         </form>
     </main>
